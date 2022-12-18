@@ -1,0 +1,6 @@
+#chats{
+    width: 95%;
+    display: flex;
+    margin: 1vh 2.5%;
+    justify-content: center;
+}

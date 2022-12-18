@@ -1,0 +1,30 @@
+.div-line{
+    width: 92.5%;
+    height: 1px;
+    border-top: 1px solid rgba(1, 1, 1, 0.05);
+    background: none;
+}
+
+.notification{
+    background-color: tomato;
+    border-radius: 50%;
+    width: 2.5vh;
+    height: 2.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vh;
+    color: white;
+    text-decoration: none;
+}
+
+.dot{
+    background-color: tomato;
+    border-radius: 50%;
+    width: 0.5vh;
+    height: 0.5vh;
+    position: absolute;
+    bottom:3.5vh;
+    left:4vh;
+    border: 0.1vh solid black;
+}

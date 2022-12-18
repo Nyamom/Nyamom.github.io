@@ -1,0 +1,26 @@
+.screen-header{
+    margin:2vh var(--horizontal-space);
+    display: flex;
+    justify-content: space-between;
+    font-size: 4vh;
+}
+.screen-header__title{
+    font-weight: bolder;
+}
+
+.screen-header__icons > *{
+    margin-left:2vw;
+    position: relative;
+}
+.have-plus div{
+    position: absolute;
+    top:25%;
+    right:-10%;
+    background-color: white;
+    width: 35%;
+    height: 35%;
+    font-size: 35%;
+    border-radius: 50%;
+    font-weight: bold;
+}
+

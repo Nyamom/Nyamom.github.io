@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friend - Kokoa clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="status-bar">
+      <div class="status-bar__column">
+        <span>No Service&nbsp;</span>
+        <!-- Wifi Icon -->
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <!-- Rotate lock Icon -->
+        <img
+          class="inline-image"
+          align="middle"
+          src="./Images/lock-refresh.svg"
+        />
+        <span>&nbsp;11%&nbsp;</span>
+        <!-- To do: bettery Icon -->
+        <i class="fa-solid fa-battery-quarter">&nbsp;</i>
+        <!-- To do: bolt Icon -->
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Chats</h1>
+      <div class="screen-header__icons">
+        <i class="fa-solid fa-magnifying-glass"> </i>
+        <i class="fa-regular fa-comment have-plus">
+            <div>
+                +
+            </div>
+        </i>
+        <i class="fa-solid fa-music"></i>
+        <i class="fa-solid fa-gear"></i>
+      </div>
+    </header>
+    <main id="chats">
+        <div class="profile">
+          <img class="profile__img-xl" src="Images/kakaoChannel.png" />
+          <div class="profile__title">
+            Kokoa clone
+            <div class="profile__subtitle">
+                Please check My Kokoa Account Info
+            </div>
+          </div>
+          <div class="profile__right">
+            <div class="profile__right__text">
+              21:22
+            </div>
+            <div class="notification">
+                1
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fa-regular fa-user"> </i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <div class="nav__link__notification notification">1</div>
+            <i class="fa-solid fa-comment fa-lg"> </i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fa-solid fa-magnifying-glass fa-lg"> </i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <i class="fa-solid fa-ellipsis fa-lg"> </i>
+            <div class="nav__link__dot"></div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/70ec9a6dfe.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

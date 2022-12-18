@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friend - Kokoa clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="status-bar">
+      <div class="status-bar__column">
+        <span>No Service&nbsp;</span>
+        <!-- Wifi Icon -->
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <!-- Rotate lock Icon -->
+        <img
+          class="inline-image"
+          align="middle"
+          src="./Images/lock-refresh.svg"
+        />
+        <span>&nbsp;11%&nbsp;</span>
+        <!-- To do: bettery Icon -->
+        <i class="fa-solid fa-battery-quarter">&nbsp;</i>
+        <!-- To do: bolt Icon -->
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <i class="fa-solid fa-magnifying-glass"> </i>
+        <i class="fa-solid fa-gear">
+            <div class="dot"></div>
+        </i>
+      </div>
+    </header>
+    <main id="find">
+        <div class="find__methods">
+            <div class="find__methods__item">
+                <i class="fa-solid fa-qrcode"></i>
+                <div class="find__methods__item__text">
+                    QR Code
+                </div>
+            </div>
+            <div class="find__methods__item">
+                <i class="fa-regular fa-address-book"></i>
+                <div class="find__methods__item__text">
+                    Add by Contacts
+                </div>
+            </div>
+            <div class="find__methods__item">
+                <div class="find__methods__item__id">
+                    ID
+                </div>
+                <div class="find__methods__item__text">
+                    Add by ID
+                </div>
+            </div>
+            <div class="find__methods__item">
+                <i class="fa-regular fa-envelope"></i>
+                <div class="find__methods__item__text">
+                    Invite
+                </div>
+            </div>
+        </div>
+        <div class="mini-title">
+            <div class="mini-title__text">
+                Recommended Friends
+            </div>
+        </div>
+        <div class="find__recommended-text">
+            You have no recommended friends.
+        </div>
+        <div class="mini-title">
+            <div class="mini-title__text">
+                <span>Recommended Friends</span>
+                <div>
+                    Go to Openchat Home
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="find__openchat">
+            <div class="find__openchat__desc">
+                <div class="find__openchat__desc__title">
+                    #Cat
+                </div>
+                <div class="find__openchat__desc__hash">
+                    #Cat#Cute#Healing
+                </div>
+                <div class="find__openchat__desc__author">
+                    <img src="Images/cat1.jpg" class="find__openchat__desc__author__img"/>
+                    <div class="find__openchat__desc__author__members">
+                        802 members
+                    </div>
+                    <div class="find__openchat__desc__author__active">
+                        Active
+                    </div>
+                </div>
+            </div>
+            <div class="find__openchat__img">
+                <img src="Images/cat1.jpg"/>
+                <div class="find__openchat__img__heart">
+                    ♥ 326
+                </div>
+            </div>
+        </div>
+        <div class="div-line">
+
+        </div>
+        <div class="find__openchat">
+            <div class="find__openchat__desc">
+                <div class="find__openchat__desc__title">
+                    Look at my pet
+                </div>
+                <div class="find__openchat__desc__hash">
+                    #I#love#cat
+                </div>
+                <div class="find__openchat__desc__author">
+                    <img src="Images/cat2.jpg" class="find__openchat__desc__author__img"/>
+                    <div class="find__openchat__desc__author__members">
+                        299 members
+                    </div>
+                    <div class="find__openchat__desc__author__active">
+                        Active
+                    </div>
+                </div>
+            </div>
+            <div class="find__openchat__img">
+                <img src="Images/cat2.jpg"/>
+                <div class="find__openchat__img__heart">
+                    ♥ 215
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fa-regular fa-user"> </i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <i class="fa-regular fa-comment fa-lg"> </i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fa-solid fa-magnifying-glass fa-lg"> </i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <i class="fa-solid fa-ellipsis fa-lg"> </i>
+            <div class="dot"></div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/70ec9a6dfe.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
