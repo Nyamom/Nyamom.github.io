@@ -1,0 +1,35 @@
+.setting-header{
+    margin:2vh var(--horizontal-space);
+    display: flex;
+    font-size: 4vh;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setting-item{
+    margin:4vh var(--horizontal-space);
+    height: 3.5vh;
+    width: 94vw;
+    font-size: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.setting-item i{
+    margin-right: 2vw;
+}
+.setting-item__left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.setting-item__right{
+    color: rgba(1,1,1,0.5);
+}
+
+.setting-item-div{
+    margin-top: 3vh;
+    padding-top: 3vh;
+    border-top: 1px solid rgba(1, 1, 1, 0.05);
+}

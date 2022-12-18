@@ -8,7 +8,7 @@
     font-weight: bolder;
 }
 
-.screen-header__icons > *{
+.screen-header__icons i{
     margin-left:2vw;
     position: relative;
 }

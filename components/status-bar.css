@@ -6,6 +6,7 @@
     box-sizing: border-box;
     justify-content: center;
     top:0;
+    font-weight: bold;
 }
 #status-bar > * {
     margin:2vw;
