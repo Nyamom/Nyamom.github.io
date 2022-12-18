@@ -1,8 +1,9 @@
 .div-line{
-    width: 92.5%;
+    width: 94%;
     height: 1px;
     border-top: 1px solid rgba(1, 1, 1, 0.05);
     background: none;
+    margin:0px 3%
 }
 
 .notification{
@@ -24,7 +25,11 @@
     width: 0.5vh;
     height: 0.5vh;
     position: absolute;
-    bottom:3.5vh;
-    left:4vh;
+    top:-10%;
+    right:-25%;
     border: 0.1vh solid black;
+}
+
+.color--red{
+    color: red;
 }

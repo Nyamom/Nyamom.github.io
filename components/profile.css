@@ -4,7 +4,8 @@
     align-items: center;
     position: relative;
     flex-wrap: wrap;
-    width: 100%;
+    width: 95%;
+    margin:0% 2.5%;
 }
 
 .profile__img-xl{
@@ -20,14 +21,33 @@
     margin-right: 2vh;
 }
 .profile__title{
-    width: 65vw;
+    width: 60vw;
     font-size: 3vh;
     font-weight: bold;
 }
 .profile__subtitle{
-    margin-top: 0.5vh;
-    font-size: 2vh;
+    width: 60vw;
+    height: 3vh;
+    font-size: 1.5vh;
     color: rgba(1,1,1,0.3);
+    display: flex;
+    align-items: center;
+}
+.profile__subtitle__text{
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.profile__subtitle__exclamation{
+    margin-left: 1vw;
+    height: 1.5vh;
+    width: 1.5vh;
+    border-radius: 50%;
+    border: 0.2vh solid red;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .profile__right{
     display: flex;
@@ -40,4 +60,7 @@
     font-size: 2vh;
     color: rgba(1,1,1,0.4);
     margin-bottom: 0.5vh;
+}
+.profile__right > i{
+    font-size: 5vh;
 }

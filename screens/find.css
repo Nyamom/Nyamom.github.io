@@ -69,9 +69,12 @@
     font-weight: bold;
 }
 .find__openchat__desc__hash{
+    width: 100%;
     font-size: 1.5vh;
     color: rgba(1,1,1,0.5);
     margin-bottom: 0.5vh;
+    text-overflow: ellipsis;
+    overflow:hidden;
 }
 .find__openchat__desc__author{
     display: flex;
