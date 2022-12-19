@@ -114,5 +114,24 @@
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+}
+.find__openchat__img__heart:hover i{
+    animation: heartBeatAni 1s linear infinite;
+    will-change: transform;
+}
+
+@keyframes heartBeatAni {
+    0%{
+        color:white;
+        transform: scale(100%);
+    }
+    50%{
+        color:red;
+        transform: scale(300%);
+    }
+    100%{
+        color:white;
+        transform: scale(100%);
+    }
 }

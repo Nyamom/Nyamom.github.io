@@ -2,8 +2,20 @@
     background-color: #ABC1D1;
 }
 .chat__main{
-    padding-top: 10vh;
-    height: 1000vh;
+    padding-top: 20vh;
+    height: 500vh;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: None;
+    }
 }
 .chat__main__date{
     margin: 0vh 28vw;
@@ -29,6 +41,26 @@
     margin:2.5vw;
     max-width: 40%;
     display: flex;
+    transform: translateX(-50vw);
+    animation: inLeft 1s ease-in-out forwards;
+}
+@keyframes inLeft{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0vw);
+    }
+}
+@keyframes inRight{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0vw);
+    }
 }
 .chat__main__other img{
     width: 8vw;
@@ -71,6 +103,9 @@
 .comment-self{
     margin-right: 1vw;
     flex-direction: row-reverse;
+    animation: inRight 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+    transform: translateX(50vw);
 }
 .comment-self .comment__bubble{
     border-top-right-radius: 0;
@@ -91,7 +126,6 @@
 }
 
 .chat__input{
-    padding: 0vh 3vw;
     width: 100%;
     height: 8vh;
     position: fixed;
@@ -100,6 +134,8 @@
     border-top: 1px solid rgba(1, 1, 1, 0.5);
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    transition: all .3s ease-in-out;
 }
 
 .chat__input__plus{
@@ -110,11 +146,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 3vw;
+    margin-right: 1vw;
     font-size: 4vh;
 }
 .chat__input__main{
     padding-left: 2vw;
+    margin-right: 2vw;
     width:85vw;
     height: 6vh;
     border: 0.2vh solid rgba(1, 1, 1, 0.3);
@@ -122,10 +159,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(222, 222, 222, 0.2);
+    background-color: rgb(247, 240, 240);
+    transition: all .3s ease-in-out;
 }
 .chat__input__main__text{
     font-size: 2.5vh;
+    width: 100%;
 }
 .chat__input__main__right{
     display: flex;
@@ -144,4 +183,18 @@
     justify-content: center;
     font-size: 4vh;
     font-weight: bold;
+}
+.chat__input:focus-within .chat__input__plus,
+.chat__input:focus-within .chat__input__main__right{
+    opacity: 0;
+}.chat__input .chat__input__plus,
+.chat__input .chat__input__main__right{
+    transition: opacity 0.3s ease-in-out;
+}
+.chat__input:focus-within .chat__input__main{
+    width: 95vw;
+    transform: translateX(-2vw) translateY(-20vh);
+}
+.chat__input:focus-within{
+    transform: translateY(20vh);
 }

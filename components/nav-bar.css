@@ -9,6 +9,36 @@
     width:100%;
 }
 
+.nav__btn{
+    transform: translateY(8vh);
+    opacity: 0;
+    animation: appearBtnAni 0.5s ease-in-out forwards;
+    will-change: transform, opacity;
+}
+
+.nav__btn:nth-child(2){
+    animation-delay: 0.25s;
+}
+
+.nav__btn:nth-child(3){
+    animation-delay: 0.5s;
+}
+
+.nav__btn:nth-child(4){
+    animation-delay: 0.75s;
+}
+
+@keyframes appearBtnAni{
+    from{
+        transform: translateY(8vh);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .nav__list{
     display: flex;
     justify-content: space-between;
