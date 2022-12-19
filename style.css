@@ -9,6 +9,7 @@
 @import "components/mini-title.css";
 @import "components/misc.css";
 @import "components/splash.css";
+@import "components/no-mobile.css";
 
 @import "screens/index.css";
 @import "screens/friends.css";
