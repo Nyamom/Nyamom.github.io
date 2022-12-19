@@ -1,15 +1,32 @@
 .screen-header{
-    margin:2vh var(--horizontal-space);
+    padding:2vh var(--horizontal-space);
+    padding-top: 5vh;
+    font-size: 3vh;
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
-    font-size: 4vh;
+    align-items: center;
+}
+.screen-header > *{
+    width: 33%;
 }
 .screen-header__title{
     font-weight: bolder;
 }
+.screen-header__title-center{
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen-header__icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 .screen-header__icons i{
-    margin-left:2vw;
+    margin-left:3vh;
     position: relative;
 }
 .have-plus div{
@@ -23,4 +40,9 @@
     border-radius: 50%;
     font-weight: bold;
 }
-
+.screen-header-fixed{
+    padding-top: 2vh;
+    position: fixed;
+    width: 95vw;
+    top:2vh;
+}

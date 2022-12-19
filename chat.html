@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats - Kokoa clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="chat">
+    <div id="status-bar">
+      <div class="status-bar__column">
+        <span>No Service&nbsp;</span>
+        <!-- Wifi Icon -->
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <!-- Rotate lock Icon -->
+        <img
+          class="inline-image"
+          align="middle"
+          src="./Images/lock-refresh.svg"
+        />
+        <span>&nbsp;11%&nbsp;</span>
+        <!-- To do: bettery Icon -->
+        <i class="fa-solid fa-battery-quarter">&nbsp;</i>
+        <!-- To do: bolt Icon -->
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+    <header class="screen-header screen-header-fixed">
+      <a href="javascript:history.back();">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+        <h1 class="screen-header__title-center">Kokoa clone</h1>
+        <div class="screen-header__icons">
+            <i class="fa-solid fa-magnifying-glass"> </i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <div class="chat__main">
+        <div class="chat__main__date">
+            Monday, December 19, 2022
+        </div>
+        <div class="chat__main__other">
+            <img src="Images/kakaoChannel.png"/>
+            <div class="chat__main__other__content">
+                <span class="chat__main__other__content__name">
+                    Kokoa clone
+                </span>
+                <div class="comment comment-other">
+                    <span class="comment__bubble">
+                        Hi!
+                    </span>
+                    <span class="comment__time">
+                        21:27
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="comment comment-self">
+          <span class="comment__bubble">
+              What's up?
+          </span>
+          <span class="comment__time">
+              21:27
+          </span>
+        </div>
+    </div>
+    <form class="chat__input">
+      <div class="chat__input__plus">
+        +
+      </div>
+      <div class="chat__input__main">
+        <input type="text" class="chat__input__main__text" placeholder="Hi!"/>
+        <div class="chat__input__main__right">
+          <i class="fa-regular fa-face-smile"></i>
+          <button type="submit" class="chat__input__main__right__send value="↑">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/70ec9a6dfe.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

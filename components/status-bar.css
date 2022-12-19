@@ -7,6 +7,7 @@
     justify-content: center;
     top:0;
     font-weight: bold;
+    position: fixed;
 }
 #status-bar > * {
     margin:2vw;
@@ -26,5 +27,5 @@
     justify-content: end;
 }
 .inline-image{
-    height: 50%;
+    height: 1.5vh;
 }

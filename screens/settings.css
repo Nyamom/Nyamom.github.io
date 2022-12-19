@@ -1,11 +1,3 @@
-.setting-header{
-    margin:2vh var(--horizontal-space);
-    display: flex;
-    font-size: 4vh;
-    font-weight: bold;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .setting-item{
     margin:4vh var(--horizontal-space);
